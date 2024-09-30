@@ -39,7 +39,7 @@
 
 .container {
   width: 400px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 .input-amount,
 .input-from,
@@ -50,7 +50,14 @@ input,
 select {
   width: 100%;
   padding: 10px;
+  border: 1px solid #dadce0;
+  outline: none;
+
 }
+.input:active {
+  border: 1px solid #818387;
+}
+
 label {
   display: block;
   margin-bottom: 5px;
@@ -60,15 +67,23 @@ select {
   border: 1px solid #ccc;
 }
 .btn {
-  background: blue;
+  background: rgb(125, 146, 153);
   color: white;
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
 }
 .btn:hover {
-  background: lightblue;
+  background: rgb(163, 216, 234);
 }
 .output {
   margin-top: 20px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+#outputAmount {
+  padding: 0 3.5rem;
 }
